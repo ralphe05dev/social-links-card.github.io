@@ -1,0 +1,144 @@
+:root {
+  /* PRIMARY COLORS */
+  --green: hsl(75, 94%, 57%);
+
+  /* NEUTRAL COLORS */
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+
+  /* FONT WEIGHTS */
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /* FONT SIZES */
+  --fs-14: 14px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--off-black);
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 450px;
+  width: 80%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.profile-pic {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 3.2rem;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+  transition: width 0.3s, height 0.3s, box-shadow 0.3s;
+}
+
+.profile-pic:hover {
+  width: 12rem;
+  height: 12rem;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.intro-info {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: var(--fw-700);
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.location {
+  color: var(--green);
+  font-size: 1.8rem;
+  font-weight: var(--fw-600);
+}
+
+.fact {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 2.8rem;
+  font-weight: var(--fw-400);
+  font-size: 1.6rem;
+}
+
+.card {
+  padding: 2.4rem;
+  background-color: var(--dark-grey);
+  border: none;
+  border-radius: 0.8rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translate(0, -4px);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+}
+
+.links {
+  gap: 1.6rem;
+}
+
+.links a {
+  border: none;
+  border-radius: 8px;
+  padding: 1.2rem 0;
+  display: block;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: var(--fw-600);
+  text-align: center;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--grey);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.links a:hover {
+  background-color: var(--green);
+  color: black;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+}
